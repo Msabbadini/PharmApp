@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>PharmaApp</title>
+
+    <!-- Custom fonts for this template-->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <style>
+      .content {
+        display: none;
+      }
+      body {
+        pointer-events: all;
+      }
+    </style>
+  </head>
+
+  <body id="page-top">
+    <!-- Page Wrapper -->
+
+    <div id="wrapper">
+      <!-- <img
+        src="img/pill.png"
+        style="width: 30px; position: absolute"
+        id="img"
+        alt=""
+      /> -->
+      <!-- Sidebar -->
+      <ul
+        class="navbar-nav sidebarBgFond sidebar sidebar-dark accordion fixed"
+        id="accordionSidebar"
+      >
+        <!-- Sidebar - Brand -->
+        <a
+          class="sidebar-brand d-flex align-items-center justify-content-center"
+          href="#"
+        >
+          <div class="sidebar-brand-text">
+            <div class="clock">
+              <div class="container">
+                <h2 id="hour">00</h2>
+                <h2 class="dot">:</h2>
+                <h2 id="minutes">00</h2>
+                <h2 class="dot">:</h2>
+                <h2 id="seconds">00</h2>
+                <span id="ampm">AM</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0" />
+
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="menu">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Accueil</span></a
+          >
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+
+        <!-- Heading -->
+        <div class="sidebar-heading">Interface</div>
+        <!-- Medicament Start -->
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            href="#"
+            data-toggle="collapse"
+            data-target="#collapseTwo"
+            aria-expanded="true"
+            aria-controls="collapseTwo"
+          >
+            <i class="fas fa-pills"></i>
+            <span>Medicaments</span>
+          </a>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordionSidebar"
+          >
+            <div class="bg-white py-2 collapse-inner rounded">
+              <a class="collapse-item" id="stockMedicament1">Stock</a>
+              <a class="collapse-item" id="ajouterMedicament1" href="#"
+                >Ajouter</a
+              >
+              <a class="collapse-item" href="#" id="modifierMedicament1"
+                >Modifier</a
+              >
+              <a class="collapse-item" href="#" id="supprimerMedicament1"
+                >Supprimer</a
+              >
+            </div>
+          </div>
+        </li>
+        <!--            Medicament END-->
+        <!-- Client START-->
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            href="#"
+            data-toggle="collapse"
+            data-target="#collapseUtilities"
+            aria-expanded="true"
+            aria-controls="collapseUtilities"
+          >
+            <i class="fas fa-address-card"></i>
+            <span>Clients</span>
+          </a>
+          <div
+            id="collapseUtilities"
+            class="collapse"
+            aria-labelledby="headingUtilities"
+            data-parent="#accordionSidebar"
+          >
+            <div class="bg-white py-2 collapse-inner rounded">
+              <a class="collapse-item" href="#" id="client1"
+                >Liste de clients</a
+              >
+              <a class="collapse-item" href="#" id="ajouterClient1"
+                >Ajouter client</a
+              >
+              <a class="collapse-item" href="#" id="supprimerClient1"
+                >Supprimer client</a
+              >
+              <a class="collapse-item" href="#" id="modifierClient1"
+                >Modifier client</a
+              >
+            </div>
+          </div>
+        </li>
+        <!-- Client END-->
+        <!-- Staff -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            href="#"
+            data-toggle="collapse"
+            data-target="#collapseStaff"
+            aria-expanded="true"
+            aria-controls="collapseStaff"
+          >
+            <i class="fas fa-hospital-user"></i>
+            <span>Staff</span>
+          </a>
+          <div
+            id="collapseStaff"
+            class="collapse"
+            aria-labelledby="headingUtilities"
+            data-parent="#accordionSidebar"
+          >
+            <div class="bg-white py-2 collapse-inner rounded">
+              <a class="collapse-item" href="#" id="staff1">Equipe</a>
+              <a class="collapse-item" href="#" id="ajouterStaff1">Ajouter</a>
+              <a class="collapse-item" href="#" id="supprimerStaff1"
+                >Supprimer</a
+              >
+              <a class="collapse-item" href="#" id="modifierStaff1">Modifier</a>
+            </div>
+          </div>
+        </li>
+        <!-- staff end  -->
+        <!-- fournisseur -->
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            href="#"
+            data-toggle="collapse"
+            data-target="#collapseFournisseur"
+            aria-expanded="true"
+            aria-controls="collapseFournisseur"
+          >
+            <i class="fas fa-ambulance"></i>
+            <span>Fournisseur</span>
+          </a>
+          <div
+            id="collapseFournisseur"
+            class="collapse"
+            aria-labelledby="headingUtilities"
+            data-parent="#accordionSidebar"
+          >
+            <div class="bg-white py-2 rounded collapse-inner">
+              <a class="collapse-item" href="#" id="fournisseur">Liste</a>
+              <a class="collapse-item" href="#" id="ajouterFournisseur1"
+                >Ajouter</a
+              >
+              <a class="collapse-item" href="#" id="supprimerFournisseur1"
+                >Supprimer</a
+              >
+              <a class="collapse-item" href="#" id="modifierFournisseur1"
+                >Modifier</a
+              >
+            </div>
+          </div>
+        </li>
+        <!-- fournisseur end -->
+
+        <!-- Divider -->
+        <hr class="sidebar-divider d-none d-md-block" />
+
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="text-center d-none d-md-inline">
+          <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+      </ul>
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column fondForm">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav
+            class="navbar navbar-expand navbar-light bg-white topbar static-top shadow"
+          >
+            <marquee
+              behavior="alternate"
+              style="font-family: 'Poppins', sans-serif; font-size: 30px"
+              scrollamount="20"
+              ><img src="logo-pharmapp-big.png" width="50" />PharmaAPP
+            </marquee>
+            <!-- Sidebar Toggle (Topbar) -->
+            <button
+              id="sidebarToggleTop"
+              class="btn btn-link d-md-none rounded-circle mr-3"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+          </nav>
+          <!-- End of Topbar -->
+          <!-- MODAL SUPPRESSION-->
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                  <h4 class="modal-title">Validation Suppression</h4>
+                  <button class="close" type="button" data-dismiss="modal">
+                    &times;
+                  </button>
+                </div>
+                <!--Modal Corps-->
+                <div class="modal-body">
+                  <p>Etes vous sûr de vouloir supprimer cet élément ?</p>
+                </div>
+                <!-- Modal Footer-->
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    data-dismiss="modal"
+                    id="falseBtn"
+                  >
+                    Non
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    data-dismiss="modal"
+                    id="trueBtn"
+                  >
+                    Oui
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--FIn MODAL SUPPRESSION-->
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
+            <!-- Page Heading -->
+          </div>
+          <!-- /.container-fluid -->
+          <!-- Accueil-->
+          <section id="menu1" class="content">
+            <img src="img/medical-5459633.svg" class="imgAccueil">
+            <div style="margin-left: 5%">
+              <h1 style="color: white" >Bienvenue sur PharmaAPP</h1>
+              <h4 style="color: white">Le gestionnaire qui vous facilite la vie</h4>
+            </div>
+          </section>
+          <!-- Fin Accueil -->
+          <!-- STOCK MEDICAMENTS START-->
+          <section id="stockMedicament" class="content">
+            <table class="formTable table" id="1">
+              <thead>
+                <tr>
+                  <th scope="col">Medicament</th>
+                  <th scope="col">Quantite</th>
+                  <th scope="col">Modifié</th>
+                </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+            </table>
+          </section>
+
+          <!-- STOCK MEDICAMENTS END-->
+
+          <!-- AJOUTER PRODUIT START  -->
+
+          <section id="ajouterMedicament" class="content">
+            <div class="">
+              <form action="" class="formContent drop">
+                <h2></h2>
+                <h5></h5>
+                <label for="nom" class="labelTexte">Nom</label>
+                <input
+                  type="text"
+                  name="nom"
+                  id="nom"
+                  class="inputBX"
+                  required
+                />
+                <label for="quantite" class="labelTexte">Quantite</label>
+                <input
+                  type="text"
+                  name="quantite"
+                  id="quantite"
+                  class="inputBX"
+                  required
+                />
+                <button type="submit" class="bAjout subMed">
+                  <a href="#">Valider</a>
+                </button>
+              </form>
+            </div>
+          </section>
+
+          <!-- AJOUTER PRODUIT END -->
+
+          <!-- MODIFIER PRODUIT START  -->
+
+          <section id="modifierMedicament" class="content">
+            <form action="" class="formContent drop">
+              <h2></h2>
+              <h5></h5>
+              <label for="nom" class="labelTexte">Nom</label>
+              <input
+                type="text"
+                name="nom"
+                id="nomM"
+                class="inputBX"
+                required
+              />
+              <label for="quantite" class="labelTexte">Quantite</label>
+              <input
+                type="text"
+                name="quantite"
+                id="quantiteM"
+                class="inputBX"
+                required
+              />
+              <button type="submit" id="modifMed" class="bAjout">
+                <a href="#">Valider</a>
+              </button>
+            </form>
+          </section>
+
+          <!-- SUPPRIMER PRODUIT END -->
+
+          <section id="supprimerMedicament" class="content">
+            <form action="" class="formContent drop">
+              <h2></h2>
+              <h5></h5>
+              <label for="nom" class="labelTexte">Nom Medicament</label>
+              <input
+                type="text"
+                name="nom"
+                id="nomS"
+                class="inputBX"
+                required
+              />
+              <button
+                type="button"
+                id="supMed"
+                class="bAjout"
+                data-toggle="modal"
+                data-target="#myModal"
+              >
+                <a href="#">Valider</a>
+              </button>
+            </form>
+          </section>
+
+          <!-- SUPPRIMER PRODUIT END -->
+
+          <!-- //////////////////////////////////////////////////////////////////// -->
+          <!-- ////////////////////////////////STAFF/////////////////////////////// -->
+          <!-- //////////////////////////////////////////////////////////////////// -->
+
+          <!-- Ajouter Staff  START-->
+
+          <section id="ajouterStaff" class="content">
+            <form action="" class="formContent drop">
+              <h2></h2>
+              <h5></h5>
+              <label for="nom" class="labelTexte">Nom</label>
+              <input
+                type="text"
+                name="nom"
+                id="nomStaff"
+                class="inputBX"
+                required
+              />
+              <label for="quantite" class="labelTexte">Poste occupé</label>
+              <input
+                type="text"
+                name="poste"
+                id="posteStaff"
+                class="inputBX"
+                required
+              />
+              <button type="submit" class="bAjout" id="subStaff">
+                <a href="#">Valider</a>
+              </button>
+            </form>
+          </section>
+          <!-- Ajouter Staff  END-->
+
+          <!-- Modifier Staff START -->
+          <section id="modifierStaff" class="content">
+            <form action="" class="formContent drop">
+              <h2></h2>
+              <h5></h5>
+              <label for="nom" class="labelTexte">Nom</label>
+              <input
+                type="text"
+                name="nom"
+                id="nomModifier"
+                class="inputBX"
+                required
+              />
+              <label for="quantite" class="labelTexte">Poste occupé</label>
+              <input
+                type="text"
+                name="poste"
+                id="posteModifier"
+                class="inputBX"
+                required
+              />
+              <button type="submit" id="modifStaff" class="bAjout">
+                <a href="#">Valider</a>
+              </button>
+            </form>
+          </section>
+          <!-- Modifier Staff END -->
+
+          <!-- Supprimer Staff START -->
+          <section id="supprimerStaff" class="content">
+            <form action="" class="formContent drop">
+              <h2></h2>
+              <h5></h5>
+              <label for="nom" class="labelTexte">Nom</label>
+              <input
+                type="text"
+                name="nom"
+                id="nomSupStaff"
+                class="inputBX"
+                required
+              />
+              <button
+                type="button"
+                id="supStaff"
+                class="bAjout"
+                data-toggle="modal"
+                data-target="#myModal"
+              >
+                <a href="#">Valider</a>
+              </button>
+            </form>
+          </section>
+          <!-- Supprimer Staff END -->
+
+          <!-- Table Staff START -->
+          <section id="staff" class="content">
+            <table class="formTable table" id="2">
+              <h2></h2>
+              <h5></h5>
+              <thead>
+                <tr>
+                  <th scope="col">Nom</th>
+                  <th scope="col">Poste</th>
+                  <th scope="col">Modifié</th>
+
+                </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+            </table>
+          </section>
+          <!-- Table Staff END -->
+
+          <!-- Client START -->
+          <section id="ajouterClient" class="content">
+            <form action="" class="formContent drop">
+              <h2></h2>
+              <h5></h5>
+              <label for="nom" class="labelTexte">Nom du client</label>
+              <input
+                type="text"
+                name="nom"
+                id="nomA"
+                class="inputBX"
+                required
+              />
+              <label for="quantite" class="labelTexte"
+                >Numero de téléphone</label
+              >
+              <input
+                type="text"
+                name="tel"
+                id="telA"
+                class="inputBX"
+                required
+              />
+              <button type="submit" class="bAjout" id="ajouterClient2">
+                <a href="#">Valider</a>
+              </button>
+            </form>
+          </section>
+
+          <section id="modifierClient" class="content">
+            <form action="" class="formContent drop">
+              <h2></h2>
+              <h5></h5>
+              <label for="nom" class="labelTexte">Nom du client</label>
+              <input
+                type="text"
+                name="nom"
+                id="nomC"
+                class="inputBX"
+                required
+              />
+              <label for="quantite" class="labelTexte"
+                >Numero de téléphone</label
+              >
+              <input
+                type="text"
+                name="tel"
+                id="telC"
+                class="inputBX"
+                required
+              />
+              <button type="submit" class="bAjout" id="modifClient">
+                <a href="#">Valider</a>
+              </button>
+            </form>
+          </section>
+
+          <section id="supprimerClient" class="content">
+            <form action="" class="formContent drop">
+              <h2></h2>
+              <h5></h5>
+              <label for="nom" class="labelTexte">Nom du client</label>
+              <input
+                type="text"
+                name="nom"
+                id="clientSUP"
+                class="inputBX"
+                required
+              />
+              <button
+                type="button"
+                class="bAjout"
+                id="suppClient"
+                data-toggle="modal"
+                data-target="#myModal"
+              >
+                <a href="#">Valider</a>
+              </button>
+            </form>
+          </section>
+
+          <section id="client" class="content">
+            <table class="formTable table" id="3">
+              <h2></h2>
+              <h5></h5>
+              <thead>
+                <tr>
+                  <th scope="col">Nom</th>
+                  <th scope="col">Tel</th>
+                  <th scope="col">Modifié</th>
+
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </section>
+
+          <!-- Client END -->
+          <!-- Fournisseur START -->
+
+          <section id="ajouterFournisseur" class="content">
+            <form action="" class="formContent drop">
+              <h2></h2>
+              <h5></h5>
+              <label for="nom" class="labelTexte">Nom du fournisseur</label>
+              <input
+                type="text"
+                name="nom"
+                id="nomFA"
+                class="inputBX"
+                required
+              />
+              <label for="quantite" class="labelTexte">Adresse</label>
+              <input
+                type="text"
+                name="adresse"
+                id="adresseFA"
+                class="inputBX"
+                required
+              />
+              <button type="submit" class="bAjout" id="ajoutFournisseur">
+                <a href="#">Valider</a>
+              </button>
+            </form>
+          </section>
+          <section id="modifierFournisseur" class="content">
+            <form action="" class="formContent drop">
+              <h2></h2>
+              <h5></h5>
+              <label for="nom" class="labelTexte">Nom du fournisseur</label>
+              <input
+                type="text"
+                name="nom"
+                id="nomFM"
+                class="inputBX"
+                required
+              />
+              <label for="quantite" class="labelTexte">Adresse</label>
+              <input
+                type="text"
+                name="adresse"
+                id="adresseFM"
+                class="inputBX"
+                required
+              />
+              <button type="submit" class="bAjout" id="modifFournisseur">
+                <a href="#">Valider</a>
+              </button>
+            </form>
+          </section>
+          <section id="supprimerFournisseur" class="content">
+            <form action="" class="formContent drop">
+              <h2></h2>
+              <h5></h5>
+              <label for="nom" class="labelTexte">Nom du fournisseur</label>
+              <input
+                type="text"
+                name="nom"
+                id="nomFSUP"
+                class="inputBX"
+                required
+              />
+              <button
+                type="button"
+                class="bAjout"
+                id="supFournisseur"
+                data-toggle="modal"
+                data-target="#myModal"
+              >
+                <a href="#">Valider</a>
+              </button>
+            </form>
+          </section>
+
+          <section id="fournisseur1" class="content">
+            <table class="formTable table" id="4">
+              <h2></h2>
+              <h5></h5>
+              <thead>
+                <tr>
+                  <th scope="col">Nom</th>
+                  <th scope="col">Adresse</th>
+                  <th scope="col">Modifié</th>
+
+                </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+            </table>
+          </section>
+          <h5 class="content">AHHAHAha</h5>
+          <!-- Fournisseur END -->
+        </div>
+        <!-- End of Main Content -->
+      </div>
+      <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+    <script src="jquery.js"></script>
+
+    <!--CLOCK-->
+    <script type="text/javascript">
+      function clock() {
+        let hours = document.getElementById("hour");
+        let minutes = document.getElementById("minutes");
+        let seconds = document.getElementById("seconds");
+        let ampm = document.getElementById("ampm");
+
+        let h = new Date().getHours();
+        let m = new Date().getMinutes();
+        let s = new Date().getSeconds();
+        var am = "AM";
+
+        if (h > 24) {
+          h = h - 24;
+          var am = "PM";
+        }
+
+        h = h < 10 ? "0" + h : h;
+        m = m < 10 ? "0" + m : m;
+        s = s < 10 ? "0" + s : s;
+
+        hours.innerHTML = h;
+        minutes.innerHTML = m;
+        seconds.innerHTML = s;
+        ampm.innerHTML = am;
+      }
+
+      var interval = setInterval(clock, 1000);
+      $(document).ready(function () {
+        $(document).mousemove(function (e) {
+          e.preventDefault();
+          var p_left = e.pageX;
+          var p_top = e.pageY;
+          $("#img").css({ left: p_left, top: p_top });
+        });
+      });
+    </script>
+  </body>
+</html>

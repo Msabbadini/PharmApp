@@ -1,0 +1,409 @@
+
+
+
+
+/*Acceuil*/
+
+.imgAccueil {
+  z-index: 0;
+float: right;
+  height: 100%;
+  width: 51%;
+  overflow: hidden;
+}
+
+
+
+/*Acceuil Fin*/
+/*Bg Sidebar Menu*/
+.sidebarBgFond {
+  background-image: linear-gradient(
+      301deg,
+      rgba(234, 234, 234, 0.04) 0%,
+      rgba(234, 234, 234, 0.04) 33.3%,
+      rgba(69, 69, 69, 0.04) 33.3%,
+      rgba(69, 69, 69, 0.04) 66.6%,
+      rgba(189, 189, 189, 0.04) 66.6%,
+      rgba(189, 189, 189, 0.04) 99.89999999999999%
+    ),
+    linear-gradient(
+      136deg,
+      rgba(126, 126, 126, 0.05) 0%,
+      rgba(126, 126, 126, 0.05) 33.3%,
+      rgba(237, 237, 237, 0.05) 33.3%,
+      rgba(237, 237, 237, 0.05) 66.6%,
+      rgba(74, 74, 74, 0.05) 66.6%,
+      rgba(74, 74, 74, 0.05) 99.89999999999999%
+    ),
+    linear-gradient(
+      69deg,
+      rgba(3, 3, 3, 0.08) 0%,
+      rgba(3, 3, 3, 0.08) 33.3%,
+      rgba(156, 156, 156, 0.08) 33.3%,
+      rgba(156, 156, 156, 0.08) 66.6%,
+      rgba(199, 199, 199, 0.08) 66.6%,
+      rgba(199, 199, 199, 0.08) 99.89999999999999%
+    ),
+    linear-gradient(
+      378deg,
+      rgba(82, 82, 82, 0.06) 0%,
+      rgba(82, 82, 82, 0.06) 33.3%,
+      rgba(179, 179, 179, 0.06) 33.3%,
+      rgba(179, 179, 179, 0.06) 66.6%,
+      rgba(212, 212, 212, 0.06) 66.6%,
+      rgba(212, 212, 212, 0.06) 99.89999999999999%
+    ),
+    linear-gradient(
+      87deg,
+      rgba(70, 70, 70, 0.02) 0%,
+      rgba(70, 70, 70, 0.02) 33.3%,
+      rgba(166, 166, 166, 0.02) 33.3%,
+      rgba(166, 166, 166, 0.02) 66.6%,
+      rgba(53, 53, 53, 0.02) 66.6%,
+      rgba(53, 53, 53, 0.02) 99.89999999999999%
+    ),
+    linear-gradient(
+      93deg,
+      rgba(129, 129, 129, 0.09) 0%,
+      rgba(129, 129, 129, 0.09) 33.3%,
+      rgba(38, 38, 38, 0.09) 33.3%,
+      rgba(38, 38, 38, 0.09) 66.6%,
+      rgba(153, 153, 153, 0.09) 66.6%,
+      rgba(153, 153, 153, 0.09) 99.89999999999999%
+    ),
+    linear-gradient(
+      118deg,
+      rgba(51, 51, 51, 0.02) 0%,
+      rgba(51, 51, 51, 0.02) 33.3%,
+      rgba(12, 12, 12, 0.02) 33.3%,
+      rgba(12, 12, 12, 0.02) 66.6%,
+      rgba(158, 158, 158, 0.02) 66.6%,
+      rgba(158, 158, 158, 0.02) 99.89999999999999%
+    ),
+    linear-gradient(
+      282deg,
+      rgba(63, 63, 63, 0.03) 0%,
+      rgba(63, 63, 63, 0.03) 33.3%,
+      rgba(9, 9, 9, 0.03) 33.3%,
+      rgba(9, 9, 9, 0.03) 66.6%,
+      rgba(85, 85, 85, 0.03) 66.6%,
+      rgba(85, 85, 85, 0.03) 99.89999999999999%
+    ),
+    linear-gradient(
+      158deg,
+      rgba(247, 247, 247, 0.07) 0%,
+      rgba(247, 247, 247, 0.07) 33.3%,
+      rgba(93, 93, 93, 0.07) 33.3%,
+      rgba(93, 93, 93, 0.07) 66.6%,
+      rgba(208, 208, 208, 0.07) 66.6%,
+      rgba(208, 208, 208, 0.07) 99%
+    ),
+    linear-gradient(55deg, rgb(68, 166, 241), rgb(136, 194, 80));
+}
+
+/*Fin Bg Sidebar Menu*/
+/*Debut Sous Menu*/
+.bgMenuGlass {
+  color: #fff;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  background: rgba(68, 166, 241, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/*Fin Sous Menu*/
+/*Debut Clock*/
+.clock {
+  position: relative;
+  width: 72%;
+  height: 50px;
+  margin-left: 14%;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  z-index: 100;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.clock .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-left: 5%;
+}
+.clock .container h2 {
+  font-size: 1em;
+  color: #fff;
+}
+.clock .container h2:nth-child(odd) {
+  padding: 5px 15px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+  margin: 0 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.clock .container h2:last-child {
+  background: #f00;
+}
+.clock .container #seconds {
+  color: #44a6f1;
+}
+.clock .container #ampm {
+  position: relative;
+  top: -25px;
+  left: -55px;
+  font-size: 1em;
+  color: #44a6f1;
+  font-weight: 700;
+}
+
+/*Tableau*/
+.formTable {
+  text-align: center;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2, 5px);
+  -webkit-backdrop-filter: blur(2, 5px);
+  border-radius: 20px;
+  /*border: 1px solid rgba( 255, 255, 255, 0.18 );*/
+  width: 45%;
+  margin: 10% auto;
+}
+/*Fin tableau*/
+/*Position Form*/
+.footerBottom {
+  margin-top: 110%;
+}
+.sidebar_off {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+/*Fin Position form*/
+.formContent {
+  display: block;
+  margin: 10% auto;
+}
+.drop {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 350px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.fondForm {
+  background-image: radial-gradient(
+      circle at 67% 83%,
+      hsla(317, 0%, 96%, 0.05) 0%,
+      hsla(317, 0%, 96%, 0.05) 1%,
+      transparent 1%,
+      transparent 5%,
+      transparent 5%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 24% 80%,
+      hsla(317, 0%, 96%, 0.05) 0%,
+      hsla(317, 0%, 96%, 0.05) 27%,
+      transparent 27%,
+      transparent 63%,
+      transparent 63%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 23% 5%,
+      hsla(317, 0%, 96%, 0.05) 0%,
+      hsla(317, 0%, 96%, 0.05) 26%,
+      transparent 26%,
+      transparent 82%,
+      transparent 82%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 21% 11%,
+      hsla(317, 0%, 96%, 0.05) 0%,
+      hsla(317, 0%, 96%, 0.05) 35%,
+      transparent 35%,
+      transparent 45%,
+      transparent 45%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 10% 11%,
+      hsla(317, 0%, 96%, 0.05) 0%,
+      hsla(317, 0%, 96%, 0.05) 21%,
+      transparent 21%,
+      transparent 81%,
+      transparent 81%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 19% 61%,
+      hsla(317, 0%, 96%, 0.05) 0%,
+      hsla(317, 0%, 96%, 0.05) 20%,
+      transparent 20%,
+      transparent 61%,
+      transparent 61%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 13% 77%,
+      hsla(317, 0%, 96%, 0.05) 0%,
+      hsla(317, 0%, 96%, 0.05) 63%,
+      transparent 63%,
+      transparent 72%,
+      transparent 72%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 30% 93%,
+      hsla(317, 0%, 96%, 0.05) 0%,
+      hsla(317, 0%, 96%, 0.05) 33%,
+      transparent 33%,
+      transparent 82%,
+      transparent 82%,
+      transparent 100%
+    ),
+    linear-gradient(90deg, rgb(68, 166, 241), rgb(136, 194, 80));
+}
+/*Input Form*/
+.inputBX {
+  width: 50%;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  padding: 8px 10px;
+  padding-left: 35px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2);
+}
+.labelTexte {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.titreModif {
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
+
+/*Fin Input Form*/
+/*BTN AJOUT*/
+.bAjout {
+  position: relative;
+  display: flex;
+  border: none;
+  border-radius: 50px;
+  background: none;
+  padding: 25px 75px;
+  margin-top: 15px;
+}
+.bAjout a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  color: #fff;
+  z-index: 1;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(15px);
+}
+.bAjout:hover a {
+  letter-spacing: 3px;
+}
+.bAjout a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+  transform: skewX(40deg) translateX(0);
+  transition: all 0.5s ease-out;
+}
+
+.bAjout:hover a::before {
+  transform: skewX(40deg) translateX(200%);
+}
+
+.bAjout::before,
+.bAjout::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 10px;
+  border-radius: 10px;
+  background: #f00;
+  transition: all 0.4s ease-in-out;
+  transition-delay: 0s;
+}
+
+.bAjout::before {
+  bottom: -5px;
+}
+
+.bAjout::after {
+  top: -5px;
+}
+
+.bAjout:hover::before,
+.bAjout:hover::after {
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.3s;
+}
+
+.bAjout:hover::before {
+  bottom: 0;
+}
+
+.bAjout:hover::after {
+  top: 0;
+}
+
+.bAjout::before,
+.bAjout::after {
+  background: #88c250;
+  box-shadow: 0 0 5px #88c250, 0 0 15px #88c250, 0 0 30px #88c250,
+    0 0 60px #88c250;
+}
+/*Fin BTN AJOUT*/

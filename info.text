@@ -1,0 +1,45 @@
+Menu
+
+Médicaments:
+ => enregistrer des médocs-> nom +QT
+ => Modification  médoc -> nom +QT
+ => Supprimer un médicament -> avoir un table avec la totalité des médicaments en stocks
+
+Clients: -> Nom +Tel
+=> Ajout
+=> Suppression
+=> Modification
+
+Staff: -> Nom + Poste au sein de la société
+=> Ajout
+=> Suppression
+=> Modification
+
+Fournisseur: -> Nom + Adresse
+=> Ajout
+=> Modifier
+=> Suppression
+
+
+<--- Modification a faire ---->
+
+Page de bienvenue avec une image
+
+
+Revoir les slides up et slide down des catégories
+
+
+client
+Voir pourquoi la suppression est total au lieu de faire que la key
+
+
+Staff
+
+
+
+Fournisseur
+
+
+
+
+
